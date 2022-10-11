@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+div {
+  width: 300px;
+  margin: 15px auto;
+  background-color: beige;
+  border: 1px solid;
+}
+strong, em, br{
+  background-color: hsla(34, 55%, 55%, 0.3);
+  border: 1px solid;
+}
+strong {
+  vertical-align: 4px;
+}
+em {
+  vertical-align: middle;
+}
+/* p {
+  font-size: 50px;
+  border: 1px solid;
+} */
+
+.inline-block {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  height: 100px;
+  width: 200px;
+  background-color: aquamarine;
+  border: 5px;
+  line-height: 100px;
+  
+}

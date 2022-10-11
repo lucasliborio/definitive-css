@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+div.container {
+  background: #545f54;
+  margin: 0 auto;
+  width: 600px;
+  height: 300px;
+  
+}
+
+div.left {
+  display: block;
+  padding: 10px;
+  width: 160px;
+  height: 220px;
+  background-color: bisque;
+  text-align: center;
+  border: 3px solid red
+  
+}
+.left p {
+  vertical-align: center;
+  margin: 0;
+  background-color: rgb(230, 141, 26);
+}
+
+div.right {
+  display: block;
+  padding: 10px;
+  width: 160px;
+  height: 220px;
+  background-color: bisque;
+  text-align: center;
+  margin: 0px auto;
+  border: 3px solid black;
+  float: left;
+}
+div.terceiro {
+  display: block;
+  padding: 10px;
+  width: 160px;
+  height: 220px;
+  background-color: rgb(205, 137, 55);
+  text-align: center;
+  border: 3px solid brown;
+  float: right;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media - query</title>
+  <!-- /*EXISTEM ALGUNS TIPOS DE MEDIA-QUERY PARA UTILIZARMOS*/ -->
+
+  <!-- PRIMEIRO DELES É O COM LINK -->
+  <!-- NO ATRIBBUTE "MEDIA" ADICIONO OS MEDIA DESCRIPTORS -->
+  <link rel="stylesheet" type="text/css" href="css/sheet1.css" media="screen and (min-width:768px)">
+  <link rel="alternate stylesheet" type="text/css" href="css/sheet3.css" media="screen and (min-width:768px)">
+  <style>
+    /* SEGUNDA FORMA É APOS O @IMPORT, ADICIONAMOS A MEDIA DESCRIPTORS */
+    /* PRECISA SER FEITO ANTES DE QUALQUER CSS RULE */
+    @import url(css//sheet2.css)screen and (max-width: 768px);
+  </style>
+</head>
+<body>
+  <em><p>TESTANDO BLOCK DENTRO DE INLINE</p></em>
+</body>
+</html>

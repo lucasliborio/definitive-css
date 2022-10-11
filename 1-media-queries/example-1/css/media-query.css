@@ -1,0 +1,59 @@
+/* 
+1 - FOUR TYPES OF MEDIA QUERY
+The media attribute of a link element
+The media attribute of a style element
+The media descriptor portion of an @import declaration
+The media descriptor portion of an @media declaration */
+
+/* 2 - MEDIA TYPES *
+- all
+- print
+- screen
+/
+/* MEDIA DESCRIPTORS 
+  - EXISTEM VARIOS E SUA GRANDE MAIORIA VEM COM A OPÇÃO DE min- e max-
+  EXEMPLOS:
+  - resolution, max-resolution, min-resolution
+  - width, max-width, min-width
+*/
+
+/* 3 - LOGICAL OPERATORS
+- and
+  cria uma conjução onde o estilo só é aplicado caso ambas proposições forem verdadeiras.
+- not
+  nega toda a expressão da media type
+- only
+  funciona se tiver suport 
+- comma (",")
+  funciona como operador ou
+*/
+
+
+/* 4 - FEATURE QUERYS
+- @supports
+CASO O DISPOSITIVO SUPORTE A COR "BLACK" E DISPLAY FLEX OU DISPLAY GRID, APLIQUE OS STYLES
+*/
+@supports (color: black) and ((display: flex) or (display: grid)) {
+ /* STYLES HERE */
+
+}
+ /* EXEMPLOS DE MEDIA QUERYS E FEATURE QUERYS ANINHADAS */
+ @supports (display: flex) {
+  @media screen {
+  /* screen flexbox styles go here */
+  }
+  @media print {
+  /* print flexbox styles go here */
+  }
+  }
+
+@media screen and (max-width: 30em){
+  @supports (display: flex) {
+  /* small-screen flexbox styles go here */
+  }
+  }
+  @media screen and (min-width: 30em) {
+  @supports (display: flex) {
+  /* large-screen flexbox styles go here */
+  }
+  }

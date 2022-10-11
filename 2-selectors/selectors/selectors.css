@@ -1,0 +1,65 @@
+/* ID SELECTORS AND CLASS */
+/* ANY ELEMENT p THAT HAVE A CLASS ATRB "selector-p" */
+
+p.selector-p {
+  font-style: italic;
+}
+/* CLASS SELECTOR */
+.warning {
+  color: red;
+}
+.sucess {
+  color: green
+}
+
+/* ANINHANDO SELECTORS PARA APLICAR O ESTILO ONDE O ELEMENT 'P' TENHAS AS DUAS CLASSES */
+p.selector-p.sucess {
+  background-color: aquamarine;
+  font-size: 3rem;
+}
+
+p#haveid.selector-p {
+  background-color: black;
+  color: wheat;
+  border-radius: 20px;
+}
+/* CANT COMBINE TWO IDS AS WITH CLASS */
+
+/* 2 - ATRIBUTE SELECTORES */
+
+/* TODO ELEMENTO P QUE TIVER ATRIBUTE 'CLASS' RECEBERÁ ESSE STYLE */
+#atribute p[class]{
+  font-size: 25px;
+}
+/* ESTILOS ESPECIFICOS*/
+
+/* EXACT MATCH*/
+#atribute p[class="red-color"]{
+  color: red;
+}
+/* EXACT MATCH COM DUPLA CONDIÇÃO DE ATRIBUTOS */
+#atribute p[class="red-color"][title]{
+ background: red;
+ color: white;
+}
+
+/* PARTIAL MATCH */
+
+/* [foo~="bar"]
+- QUALQUER ELEMENT QUE TENHA O ATRIBUTO FOO QUE CONTENHA A PALAVRA "BAR" SEPARADA DO ESPAÇO
+
+[foo*="bar"]
+- QUALQUER ELEMENT QUE TENHA O ATRIBUTO FOO EM UMA SUBSTRING
+
+[foo^="bar"]
+- QUALQUER ELEMENT QUE TENHA O ATRIBUTO FOO COM O VALOR "BAR" NO INICIO
+
+[foo$="bar"]
+- QUALQUER ELEMENT QUE TENHA O ATRIBUTO FOO COM O VALOR "BAR" NO FINAL
+
+[foo|="bar"] 
+- SELECTIONA UM ELEMENTO COM UM ATRIBUTO FOO CUJO O VALOR COMEÇA COM 'bar" E É SEGUIDO POR DASH OU OUTRO VALOR
+
+[foo$="bar"i]
+- QUALQUER ELEMENT QUE TENHA O ATRIBUTO FOO COM O VALOR "BAR" NO FINAL e "i" NO FINAL É PARA CASE INSESITIVE
+*/

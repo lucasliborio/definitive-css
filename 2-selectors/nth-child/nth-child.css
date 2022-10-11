@@ -1,0 +1,9 @@
+p:nth-child(3n + 2){
+  background-color: blue;
+  color: white;
+}
+
+/* CONTAnDO DE TRAS PRA FRENTE */
+p:nth-last-of-type(-2n + 5){
+  font-size: 30px;
+}

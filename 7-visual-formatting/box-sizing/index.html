@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altering display</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- AQUI NOS ENTENDEMOS COMO FUNCIONA O BOX-SIZING -->
+<!-- BOX SIZING DEFINITE COMO SERÁ CALCULADO O WIDTH E A HEIGHT DE UMA BOX -->
+<!-- POR PADRÃO ELE IRÁ CALCULA A WIDTH CONTENT BOX SOMANDO, BORDER E PADDING -->
+<!-- NO BORDER-BOX O WIDHT DE TUDO SEMPRE SERÁ O VALOR SELECIONADO, E TODO PADDING E BORDER IRÁ SE AJUSTAR A ESSE VALOR -->
+<!-- exemplo -->
+<!-- 400 width padding: 30px border: 2px  = 464px totalizando-->
+<!-- no box-sizing=contentbox = esse valores juntos seriam o valor do width total, sendo assim a width-464px -->
+<!-- ja no box-sizing=border-box = todo conteudo ia se ajustar para caber nos 400width declarados -->
+<body>
+  <section>
+    <div class="box">
+      <div class="inside"></div>
+    </div>
+    <div class="box">
+      <div class="inside"></div>
+    </div>
+  </section>
+  <div class="container">
+    <p>this is a paragrahp inside a div</p><p>this other paragrahp</p>
+  </div>
+</body>
+
+</html>

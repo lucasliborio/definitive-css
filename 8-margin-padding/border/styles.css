@@ -1,0 +1,19 @@
+.dotted div {
+  background: linear-gradient(hsla(24, 64%, 54%, 0.5)0%, hsla(24, 85%, 15%, 0.5) 50%, hsla(23, 52%, 5%, 0.4)100%);
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 50%;
+  height: 300px;
+  padding: 30px;
+  border: 3px outset hsla(24, 93%, 40%, 0.2);
+  border-radius: 10px;
+  background-clip:padding-box
+}
+
+.dotted .inside {
+  width: 50%;
+  height: 50%;
+  border: thin dashed cadetblue;
+  border-width: 20px 20px 10px thick;
+  border-style: ridge ridge ridge inset;
+}

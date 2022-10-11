@@ -1,0 +1,13 @@
+section ul > li{
+  display: inline;
+  padding: 0 0.33em;
+  border-right: 1px solid;
+  
+}
+section ul >li:first-child {
+  border-left: 1px solid;
+}
+
+nav a {
+  display: block;
+}

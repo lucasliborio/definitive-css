@@ -1,0 +1,58 @@
+/* PSEUDO CLASS */
+/* PODEMOS COMBINAR PSEUDO-SELECTORS */
+a:hover:link {
+  /* styles go here */
+}
+
+/*BASICA PSEUDO ELEMENTS */
+:root {
+  border: 10px dotted gray;
+}
+
+:empty {
+  background-color: brown;
+  margin: 1.3rem auto;
+  width: 100px;
+  height: 100px;
+}
+
+/* ESTILIZE O H1 QUE FOR FILHO UNICO DE ALGUM ELEMENT PARENT */
+h1:only-child {
+  background-color: antiquewhite;
+}
+
+/* ESTILIZE O ELEMENT 'em'  QUE FOR O UNICO CHILDREN EM QUE SEJA DESCENDENTE DE P E P DESCENDENTE DE LI */
+li p em:only-of-type {
+  color: blueviolet;
+}
+
+/* QUALQUER ELEMENT P OU LI QUE FOR FISTCHILD DE ALGUM ELEMENTO PARENT */
+#child p:first-child, li:first-child {
+  text-transform: uppercase;
+  font-weight: bold
+}
+
+/* QUALQUE TABLE QUE FOR O PRIMEIRO DO TIPO DENTRO DE UM ELEMENTO PARENT */
+table:first-of-type {border-top: 2px solid gray;}
+
+
+/* QUALQUER ELEMENTO "p" QUE SEJA O TERCEIRO FILHO DE UM ELEMENTO PARENT QAULQUER*/
+p:nth-child(3) {font-weight: bold;}
+
+/* QUALQUER ELEMENTO "li" QUE SEJA O SEGUNDO FILHO DE UM ELEMENTO PARENT QAULQUER*/
+li:nth-child(2) {text-transform: uppercase;}
+
+tr:nth-last-child(odd) {background: silver;}
+tr:nth-last-child(2n+1) {background: silver;} /* equivalent */
+
+
+/* QUALQUER ELEMENT "a" SEJA PAR DO SEU TIPO QUE SEJA CHILD DO ELEMENT "p" */
+p > a:nth-of-type(even) {background: blue; color: white;}
+
+/* ALGUNS PSEU-SELECTORS */
+a:link {color: navy;}
+a:visited {color: gray;}
+a:focus {color: orange;}
+a:hover {color: red;}
+a:active {color: yellow;}
+
